@@ -1,0 +1,212 @@
+/**
+* You can edit this whole file.
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --gray-0: #000000;
+  --gray-1: #222222;
+  --gray-2: #dddddd;
+  --gray-3: #fbfbfb;
+  --gray-4: #ffffff;
+  --primary: #8a2be2;
+  --secondary: #20d397;
+  --font-size-1: 1.5rem;
+  --font-size-2: 1.25rem;
+  --font-size-3: 1rem;
+  --font-weight-thin: 300;
+  --font-weight-bold: 600;
+  --font-weight-heavy: 800;
+  --spacer-1: .25rem;
+  --spacer-2: .5rem;
+  --spacer-3: 1rem;
+  --spacer-4: 1.5rem;
+  --spacer-5: 2rem;
+  --shadows: 7px 7px 7px rgba(0, 0, 0, .15);
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.44;
+}
+
+.header {
+  background: var(--secondary);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  padding: 0px 120px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  line-height: 30px;
+}
+
+.logo a {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  font-size: 20px;
+  font: bold;
+}
+
+.logo image {
+  width: 40px;
+  margin-right: 30px;
+}
+
+.nav-menu {
+  display: flex;
+  width: max-content;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-menu li {
+  font-size: 16px;
+  line-height: 80px;
+  font-weight: bold;
+  margin-inline-end: 10px;
+}
+
+.container_h1{
+  font-size: var(--font-size-3);
+  margin: 40px 0px 0px 90px;
+  width: 90%;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0px 0px 0px 90px;
+  padding: 50px;
+  width: 90%;
+}
+
+.card {
+  flex: 1;
+  border: 1px solid --gray-2;
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  box-shadow: 5px 5px 15px gray;
+  text-align: justify;
+}
+
+.button_card {
+  position: static;
+  bottom: 0;
+  padding: 0.7em 1em;
+  background-color: var(--primary);
+  justify-content: center;
+}
+
+
+.card image {
+  width: 40px;
+}
+
+.card a {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
+}
+
+a:is(:link, :active, :visited) {
+  color: white;
+  text-decoration: none;
+}
+
+.active{
+  color: white;
+  text-decoration: underline !important;
+}
+
+h1{
+  margin-top: 20px;
+
+}
+
+h2{
+  padding-bottom: 15px;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    width: 100%;
+  }
+
+  .card {
+    flex: 1;
+    display: inline-block;
+    width: 90%;
+    height: 600px;
+    text-align: justify;
+    padding-top: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 1rem;
+    color: hsla(0, 0%, 0%, 0.75);
+    box-shadow: 5px 5px 15px gray;
+  }
+
+  .nav {
+    width: max-content;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+
+  .nav-menu {
+    display: flex;
+    width: max-content;
+    margin-inline-start: 100px;
+  }
+
+  .nav-menu ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .nav-menu li {
+    font-size: 14px;
+    line-height: 80px;
+    font-weight: bold;
+    margin-inline-start: 10px;
+  }
+
+}
+
+#someContainer blockquote  { display:none }
+#someContainer blockquote  + p:before { content:"|"; color: transparent; letter-spacing:-100px; border-left: 1px dashed black; margin:0 5px; }
